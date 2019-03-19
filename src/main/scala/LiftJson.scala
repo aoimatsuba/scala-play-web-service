@@ -1,5 +1,6 @@
-import net.liftweb.json.DefaultFormats
+import net.liftweb.json.{DefaultFormats, JsonAST}
 import net.liftweb.json.Serialization.write
+import net.liftweb.json._
 
 case class Person(name: String, age: Int, address: Address)
 case class Address(zip: Int, city: String)
